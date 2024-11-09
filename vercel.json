@@ -2,13 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "pages/**/*.tsx",
-      "use": "@vercel/next"
+      "src": "api/**/*.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 10
+      }
     }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs16.x"
-    }
-  }
+  ]
 }
