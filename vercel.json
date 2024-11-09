@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "functions": {
-    "api/meeting/[id].ts": {
-      "runtime": "edge"
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 10
+      }
     }
-  },
-  "env": {
-    "MY_API_KEY": "6s3f2jr9jrhn"
-  }
+  ]
 }
