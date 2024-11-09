@@ -119,3 +119,10 @@
     width: 100%;
   }
 }
+/* styles/globals.css or in a dedicated CSS file */
+.time-date {
+  /* Example custom styles */
+  padding: 1rem;
+  background-color: #000;
+}
+
